@@ -15,23 +15,3 @@ def run_command(cmd):
         cmd, shell=True, capture_output=True, text=True
     )
     return result.stdout
-
-import subprocess
-
-def run_command(cmd):
-    # penggunaan shell=True berbahaya
-    # (Command Injection)
-    result = subprocess.run(
-        cmd, shell=True, capture_output=True, text=True
-    )
-    return result.stdout
-
-import subprocess
-
-def run_command(cmd):
-    # penggunaan shell=True berbahaya
-    # (Command Injection)
-    result = subprocess.run(
-        cmd, shell=True, capture_output=True, text=True
-    )
-    return result.stdout
